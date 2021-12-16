@@ -1,0 +1,18 @@
+
+body {
+    background: #111;
+    margin: 0;
+    overflow: hidden;
+}
+
+.background > video {
+    position: absolute;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.background > .bottom {
+    opacity: 0;
+}
