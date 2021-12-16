@@ -10,15 +10,17 @@ const settings = {
     // Keep this above transition time
     time_before_next: 5000,
 
+    // Each background that can be picked
+    // Format { file, volume(0-1)(optional) }
     backgrounds: [
-        "./resources/1.mkv",
-        "./resources/2.mkv",
-        "./resources/3.mkv",
-        "./resources/4.mkv",
-        "./resources/5.mkv",
-        "./resources/6.mkv",
-        "./resources/7.mkv",
-        "./resources/8.mkv",
-        "./resources/9.mkv"
+        { file: "./resources/1.mkv" },
+        { file: "./resources/2.mkv", volume: 0.5 },
+        { file: "./resources/3.mkv" },
+        { file: "./resources/4.mkv" },
+        { file: "./resources/5.mkv" },
+        { file: "./resources/6.mkv" },
+        { file: "./resources/7.mkv" },
+        { file: "./resources/8.mkv" },
+        { file: "./resources/9.mkv" }
     ],
 }

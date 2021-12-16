@@ -32,8 +32,8 @@ function setRandomBackground() {
 
     // Set new bg
     const bg = settings.backgrounds[current_background];
-    bottom.setAttribute('src', bg);
-    bottom.setAttribute('type', `video/${bg.split('.').pop()}`);
+    bottom.setAttribute('src', bg.file);
+    bottom.setAttribute('type', `video/${bg.file.split('.').pop()}`);
 
     // Wait till image is loaded to start transition
     bottom.onloadeddata = () => {
@@ -44,6 +44,7 @@ function setRandomBackground() {
         bottom.classList.add('top');
 
         bottom.play();
+        bottom.volume = bg.volume || 1;
         // Remove old bg to save resources (I think this helps)
         setTimeout(() => {
             top.pause();
